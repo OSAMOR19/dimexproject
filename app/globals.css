@@ -1,0 +1,182 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 252 58% 31%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 32 93% 54%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 252 58% 31%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 252 58% 31%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 32 93% 54%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 252 58% 31%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+.data-gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(45, 33, 125, 0.1) 0%,
+    rgba(247, 148, 29, 0.1) 50%,
+    rgba(45, 33, 125, 0.1) 100%
+  );
+  background-size: 200% 200%;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #2d217d, #f7941d, #2d217d);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textGradient 5s ease infinite;
+}
+
+@keyframes textGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.hero-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232d217d' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.service-card {
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.1);
+}
+
+.service-icon {
+  transition: transform 0.3s ease;
+}
+
+.case-study-card {
+  transition: all 0.3s ease;
+}
+
+.case-study-card:hover {
+  transform: scale(1.02);
+}
+
+.blog-card {
+  transition: all 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.data-particle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(247, 148, 29, 0.5);
+  animation: float 3s ease-in-out infinite;
+}
+
+.data-particle:nth-child(2n) {
+  background-color: rgba(45, 33, 125, 0.5);
+  animation-delay: 0.5s;
+}
+
+.data-particle:nth-child(3n) {
+  width: 12px;
+  height: 12px;
+  animation-delay: 1s;
+}
+
+.data-particle:nth-child(4n) {
+  width: 6px;
+  height: 6px;
+  animation-delay: 1.5s;
+}
+
+.data-particle:nth-child(5n) {
+  width: 10px;
+  height: 10px;
+  animation-delay: 2s;
+}
+
+.data-line {
+  position: absolute;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(45, 33, 125, 0.2), rgba(247, 148, 29, 0.2));
+  animation: data-flow 10s ease infinite;
+}
+
+.data-line:nth-child(2n) {
+  animation-delay: 2s;
+}
+
+.data-line:nth-child(3n) {
+  animation-delay: 4s;
+}
+
+.data-line:nth-child(4n) {
+  animation-delay: 6s;
+}
+
+.data-line:nth-child(5n) {
+  animation-delay: 8s;
+}
