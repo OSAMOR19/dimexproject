@@ -1,33 +1,34 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import hero from "@/components/images/personhero.jpg"
-import { ArrowRight, BarChart2, Database, LineChart } from "lucide-react"
-import DataParticles from "@/components/animations/data-particles"
-import RevealOnScroll from "@/components/animations/reveal-on-scroll"
-import AnimatedGradientText from "@/components/animations/animated-gradient-text"
-import RotatingCircle from "@/components/animations/rotating-circle"
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import hero from "@/components/images/personhero.jpg";
+import { ArrowRight, BarChart2, Database, LineChart } from "lucide-react";
+import DataParticles from "@/components/animations/data-particles";
+import RevealOnScroll from "@/components/animations/reveal-on-scroll";
+import AnimatedGradientText from "@/components/animations/animated-gradient-text";
+import RotatingCircle from "@/components/animations/rotating-circle";
+import Link from "next/link";
 
 const HeroSection = () => {
-  const [typedText, setTypedText] = useState("")
-  const fullText = "Transform Your Data Into Actionable Insights"
-  const typingSpeed = 100
+  const [typedText, setTypedText] = useState("");
+  const fullText = "Transform Your Data Into Actionable Insights";
+  const typingSpeed = 100;
 
   useEffect(() => {
-    let currentIndex = 0
+    let currentIndex = 0;
     const typingInterval = setInterval(() => {
       if (currentIndex <= fullText.length) {
-        setTypedText(fullText.slice(0, currentIndex))
-        currentIndex++
+        setTypedText(fullText.slice(0, currentIndex));
+        currentIndex++;
       } else {
-        clearInterval(typingInterval)
+        clearInterval(typingInterval);
       }
-    }, typingSpeed)
+    }, typingSpeed);
 
-    return () => clearInterval(typingInterval)
-  }, [])
+    return () => clearInterval(typingInterval);
+  }, []);
 
   return (
     <section className="relative pt-32 pb-20 overflow-hidden bg-white hero-pattern">
@@ -47,23 +48,36 @@ const HeroSection = () => {
           <RevealOnScroll animation="fade-in-left">
             <div className="space-y-6">
               <div className="inline-block bg-navy/10 text-navy px-4 py-2 rounded-full text-sm font-medium">
-               Data & Analytics services
+                Data & Analytics services
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-navy leading-tight">
                 {typedText}
                 <span className="animate-pulse">|</span>
               </h1>
               <p className="text-lg text-gray-700 max-w-lg">
-                We helped businesses harness the power of data to drive growth, optimize operations, and make informed
-                decisions.
+                We helped businesses harness the power of data to drive growth,
+                optimize operations, and make informed decisions.
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
-                <Button size="lg" className="bg-orange hover:bg-orange/90 text-white">
-                  Let&apos;s Talk Data <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-                <Button size="lg" variant="outline" className="border-navy text-navy hover:bg-navy hover:text-white">
-                  Our Services
-                </Button>
+                <Link href="/contact">
+                  <Button
+                    size="lg"
+                    className="bg-orange hover:bg-orange/90 text-white transform transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95 group"
+                  >
+                    Let&apos;s Talk Data 
+                    <ArrowRight className="ml-2 h-4 w-4 transform transition-transform group-hover:translate-x-1" />
+                  </Button>
+                </Link>
+                
+                <Link href="/services">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="border-navy text-white hover:bg-navy hover:text-white transform transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95 relative overflow-hidden before:absolute before:inset-0 before:bg-navy before:transform before:scale-x-0 before:transition-transform before:duration-300 hover:before:scale-x-100 before:origin-left"
+                  >
+                    <span className="relative z-10">Our Services</span>
+                  </Button>
+                </Link>
               </div>
 
               <div className="flex flex-wrap gap-8 pt-6">
@@ -72,7 +86,10 @@ const HeroSection = () => {
                     <Database className="h-5 w-5 text-navy" />
                   </div>
                   <div>
-                    <AnimatedGradientText text="100+" className="text-xl font-bold" />
+                    <AnimatedGradientText
+                      text="100+"
+                      className="text-xl font-bold"
+                    />
                     <p className="text-sm text-gray-600">Projects Completed</p>
                   </div>
                 </div>
@@ -81,7 +98,10 @@ const HeroSection = () => {
                     <BarChart2 className="h-5 w-5 text-navy" />
                   </div>
                   <div>
-                    <AnimatedGradientText text="95%" className="text-xl font-bold" />
+                    <AnimatedGradientText
+                      text="95%"
+                      className="text-xl font-bold"
+                    />
                     <p className="text-sm text-gray-600">Client Satisfaction</p>
                   </div>
                 </div>
@@ -90,7 +110,10 @@ const HeroSection = () => {
                     <LineChart className="h-5 w-5 text-navy" />
                   </div>
                   <div>
-                    <AnimatedGradientText text="30+" className="text-xl font-bold" />
+                    <AnimatedGradientText
+                      text="30+"
+                      className="text-xl font-bold"
+                    />
                     <p className="text-sm text-gray-600">Industries Served</p>
                   </div>
                 </div>
@@ -126,7 +149,7 @@ const HeroSection = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default HeroSection
+export default HeroSection;
