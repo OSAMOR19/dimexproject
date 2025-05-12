@@ -114,7 +114,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Featured Services Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-50 dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service) => (
@@ -142,17 +142,17 @@ export default function ServicesPage() {
       <TechStack />
 
       {/* Our Approach Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <RevealOnScroll>
             <div className="max-w-3xl mx-auto text-center mb-16">
-              <div className="inline-block bg-navy/10 text-navy px-4 py-2 rounded-full text-sm font-medium mb-4">
+              <div className="inline-block bg-navy/10 dark:bg-navy/20 text-navy dark:text-gray-200 px-4 py-2 rounded-full text-sm font-medium mb-4">
                 Our Approach
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-navy mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-navy dark:text-gray-100 mb-6">
                 How We <AnimatedGradientText text="Deliver Results" />
               </h2>
-              <p className="text-gray-600">
+              <p className="text-gray-600 dark:text-gray-300">
                 Our proven methodology ensures we deliver high-quality solutions that meet your specific business needs.
               </p>
             </div>
@@ -160,48 +160,48 @@ export default function ServicesPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <RevealOnScroll animation="fade-in-up" delay={0}>
-              <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-100">
-                <div className="bg-navy/10 w-12 h-12 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-navy font-bold text-xl">1</span>
+              <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-100 dark:border-gray-700">
+                <div className="bg-navy/10 dark:bg-navy/20 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                  <span className="text-navy dark:text-gray-200 font-bold text-xl">1</span>
                 </div>
-                <h3 className="text-xl font-bold text-navy mb-2">Discovery</h3>
-                <p className="text-gray-600">
+                <h3 className="text-xl font-bold text-navy dark:text-gray-100 mb-2">Discovery</h3>
+                <p className="text-gray-600 dark:text-gray-300">
                   We begin by understanding your business objectives, challenges, and current data landscape.
                 </p>
               </div>
             </RevealOnScroll>
 
             <RevealOnScroll animation="fade-in-up" delay={150}>
-              <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-100">
-                <div className="bg-navy/10 w-12 h-12 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-navy font-bold text-xl">2</span>
+              <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-100 dark:border-gray-700">
+                <div className="bg-navy/10 dark:bg-navy/20 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                  <span className="text-navy dark:text-gray-200 font-bold text-xl">2</span>
                 </div>
-                <h3 className="text-xl font-bold text-navy mb-2">Strategy</h3>
-                <p className="text-gray-600">
+                <h3 className="text-xl font-bold text-navy dark:text-gray-100 mb-2">Strategy</h3>
+                <p className="text-gray-600 dark:text-gray-300">
                   We develop a tailored strategy and roadmap to address your specific data needs and goals.
                 </p>
               </div>
             </RevealOnScroll>
 
             <RevealOnScroll animation="fade-in-up" delay={300}>
-              <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-100">
-                <div className="bg-navy/10 w-12 h-12 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-navy font-bold text-xl">3</span>
+              <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-100 dark:border-gray-700">
+                <div className="bg-navy/10 dark:bg-navy/20 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                  <span className="text-navy dark:text-gray-200 font-bold text-xl">3</span>
                 </div>
-                <h3 className="text-xl font-bold text-navy mb-2">Implementation</h3>
-                <p className="text-gray-600">
+                <h3 className="text-xl font-bold text-navy dark:text-gray-100 mb-2">Implementation</h3>
+                <p className="text-gray-600 dark:text-gray-300">
                   Our expert team executes the strategy, implementing solutions with minimal disruption.
                 </p>
               </div>
             </RevealOnScroll>
 
             <RevealOnScroll animation="fade-in-up" delay={450}>
-              <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-100">
-                <div className="bg-navy/10 w-12 h-12 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-navy font-bold text-xl">4</span>
+              <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-100 dark:border-gray-700">
+                <div className="bg-navy/10 dark:bg-navy/20 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                  <span className="text-navy dark:text-gray-200 font-bold text-xl">4</span>
                 </div>
-                <h3 className="text-xl font-bold text-navy mb-2">Optimization</h3>
-                <p className="text-gray-600">
+                <h3 className="text-xl font-bold text-navy dark:text-gray-100 mb-2">Optimization</h3>
+                <p className="text-gray-600 dark:text-gray-300">
                   We continuously monitor, measure, and refine solutions to ensure optimal performance.
                 </p>
               </div>

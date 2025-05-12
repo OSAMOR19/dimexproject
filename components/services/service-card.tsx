@@ -16,18 +16,18 @@ interface ServiceCardProps {
 const ServiceCard = ({ title, description, icon, features, delay = 0 }: ServiceCardProps) => {
   return (
     <RevealOnScroll animation="fade-in-up" delay={delay}>
-      <Card className="service-card border-none shadow-lg hover:shadow-xl bg-white h-full">
+      <Card className="service-card border-none shadow-lg hover:shadow-xl bg-white dark:bg-gray-800 h-full">
         <CardHeader>
-          <div className="service-icon bg-navy/5 p-4 rounded-2xl inline-block mb-4">{icon}</div>
-          <CardTitle className="text-xl text-navy">{title}</CardTitle>
-          <CardDescription className="text-gray-600">{description}</CardDescription>
+          <div className="service-icon bg-navy/5 dark:bg-navy/20 p-4 rounded-2xl inline-block mb-4">{icon}</div>
+          <CardTitle className="text-xl text-navy dark:text-gray-100">{title}</CardTitle>
+          <CardDescription className="text-gray-600 dark:text-gray-300">{description}</CardDescription>
         </CardHeader>
         <CardContent>
           <ul className="space-y-2">
             {features.map((feature, index) => (
               <li key={index} className="flex items-start">
                 <span className="text-orange mr-2">•</span>
-                <span className="text-gray-700 text-sm">{feature}</span>
+                <span className="text-gray-700 dark:text-gray-300 text-sm">{feature}</span>
               </li>
             ))}
           </ul>

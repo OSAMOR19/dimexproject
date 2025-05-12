@@ -20,7 +20,7 @@ interface CaseStudyCardProps {
 const CaseStudyCard = ({ id, title, client, industry, summary, result, image, delay = 0 }: CaseStudyCardProps) => {
   return (
     <RevealOnScroll animation="fade-in-up" delay={delay}>
-      <Card className="case-study-card overflow-hidden border-none shadow-lg hover:shadow-xl bg-white h-full">
+      <Card className="case-study-card overflow-hidden border-none shadow-lg hover:shadow-xl bg-white dark:bg-gray-800 h-full">
         <div className="relative h-48 overflow-hidden">
           <Image
             src={image || "/placeholder.svg"}
@@ -35,15 +35,15 @@ const CaseStudyCard = ({ id, title, client, industry, summary, result, image, de
         </div>
 
         <CardHeader>
-          <CardTitle className="text-xl text-navy">{title}</CardTitle>
-          <CardDescription className="text-gray-600">Client: {client}</CardDescription>
+          <CardTitle className="text-xl text-navy dark:text-gray-100">{title}</CardTitle>
+          <CardDescription className="text-gray-600 dark:text-gray-300">Client: {client}</CardDescription>
         </CardHeader>
 
         <CardContent className="space-y-4">
-          <p className="text-gray-700 text-sm">{summary}</p>
-          <div className="bg-navy/5 p-4 rounded-lg">
-            <h4 className="text-navy font-medium mb-1">Results:</h4>
-            <p className="text-gray-700 text-sm">{result}</p>
+          <p className="text-gray-700 dark:text-gray-300 text-sm">{summary}</p>
+          <div className="bg-navy/5 dark:bg-navy/20 p-4 rounded-lg">
+            <h4 className="text-navy dark:text-gray-100 font-medium mb-1">Results:</h4>
+            <p className="text-gray-700 dark:text-gray-300 text-sm">{result}</p>
           </div>
         </CardContent>
 

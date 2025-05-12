@@ -40,17 +40,17 @@ const faqItems = [
 
 export default function FaqSection() {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <RevealOnScroll>
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <div className="inline-block bg-navy/10 text-navy px-4 py-2 rounded-full text-sm font-medium mb-4">
+            <div className="inline-block bg-navy/10 dark:bg-navy/20 text-navy dark:text-gray-200 px-4 py-2 rounded-full text-sm font-medium mb-4">
               Common Questions
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-navy mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-navy dark:text-gray-100 mb-6">
               Frequently Asked <AnimatedGradientText text="Questions" />
             </h2>
-            <p className="text-gray-600">
+            <p className="text-gray-600 dark:text-gray-400">
               Find answers to common questions about our data analytics services and how they can benefit your business.
             </p>
           </div>
@@ -61,10 +61,10 @@ export default function FaqSection() {
             {faqItems.map((item, index) => (
               <RevealOnScroll key={item.id} delay={index * 100}>
                 <AccordionItem value={item.id}>
-                  <AccordionTrigger className="text-left font-semibold text-navy hover:text-orange transition-colors">
+                  <AccordionTrigger className="text-left font-semibold text-navy dark:text-gray-200 hover:text-orange dark:hover:text-orange transition-colors">
                     {item.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-gray-600">
+                  <AccordionContent className="text-gray-600 dark:text-gray-400">
                     {item.answer}
                   </AccordionContent>
                 </AccordionItem>

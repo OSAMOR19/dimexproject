@@ -123,16 +123,16 @@ export default function BlogPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-50 dark:bg-gray-800">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
             <div className="lg:col-span-1">
               <div className="sticky top-24">
                 <RevealOnScroll animation="fade-in-left">
-                  <div className="bg-white rounded-xl shadow-md p-6 mb-8">
-                    <h3 className="text-lg font-bold text-navy mb-4">Search</h3>
+                  <div className="bg-white dark:bg-gray-700 rounded-xl shadow-md p-6 mb-8">
+                    <h3 className="text-lg font-bold text-navy dark:text-gray-100 mb-4">Search</h3>
                     <div className="flex">
-                      <Input type="text" placeholder="Search articles..." className="rounded-r-none" />
+                      <Input type="text" placeholder="Search articles..." className="rounded-r-none dark:bg-gray-800 dark:text-white dark:border-gray-600" />
                       <Button className="bg-orange hover:bg-orange/90 text-white rounded-l-none">
                         <Search className="h-4 w-4" />
                       </Button>
@@ -141,14 +141,14 @@ export default function BlogPage() {
                 </RevealOnScroll>
 
                 <RevealOnScroll animation="fade-in-left" delay={200}>
-                  <div className="bg-white rounded-xl shadow-md p-6">
-                    <h3 className="text-lg font-bold text-navy mb-4">Categories</h3>
+                  <div className="bg-white dark:bg-gray-700 rounded-xl shadow-md p-6">
+                    <h3 className="text-lg font-bold text-navy dark:text-gray-100 mb-4">Categories</h3>
                     <div className="flex flex-wrap gap-2">
                       {categories.map((category) => (
                         <Badge
                           key={category}
                           variant="outline"
-                          className="bg-transparent hover:bg-navy hover:text-white cursor-pointer transition-colors"
+                          className="bg-transparent dark:text-gray-200 dark:border-gray-500 hover:bg-navy hover:text-white dark:hover:bg-navy/70 cursor-pointer transition-colors"
                         >
                           {category}
                         </Badge>
@@ -158,12 +158,12 @@ export default function BlogPage() {
                 </RevealOnScroll>
 
                 <RevealOnScroll animation="fade-in-left" delay={400}>
-                  <div className="bg-white rounded-xl shadow-md p-6 mt-8">
-                    <h3 className="text-lg font-bold text-navy mb-4">Subscribe</h3>
-                    <p className="text-gray-600 text-sm mb-4">
+                  <div className="bg-white dark:bg-gray-700 rounded-xl shadow-md p-6 mt-8">
+                    <h3 className="text-lg font-bold text-navy dark:text-gray-100 mb-4">Subscribe</h3>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
                       Get the latest articles and insights delivered to your inbox.
                     </p>
-                    <Input type="email" placeholder="Your email address" className="mb-3" />
+                    <Input type="email" placeholder="Your email address" className="mb-3 dark:bg-gray-800 dark:text-white dark:border-gray-600" />
                     <Button className="w-full bg-orange hover:bg-orange/90 text-white">Subscribe</Button>
                   </div>
                 </RevealOnScroll>
@@ -190,7 +190,7 @@ export default function BlogPage() {
 
               <RevealOnScroll delay={900}>
                 <div className="mt-12 flex justify-center">
-                  <Button variant="outline" className="border-navy text-navy hover:bg-navy/5">
+                  <Button variant="outline" className="border-navy text-navy dark:border-gray-300 dark:text-gray-200 hover:bg-navy/5 dark:hover:bg-navy/20">
                     Load More Articles
                   </Button>
                 </div>

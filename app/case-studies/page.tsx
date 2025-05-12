@@ -99,7 +99,7 @@ export default function CaseStudiesPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-50 dark:bg-gray-800">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {caseStudies.map((study) => (
@@ -119,17 +119,17 @@ export default function CaseStudiesPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <RevealOnScroll>
             <div className="max-w-3xl mx-auto text-center mb-16">
-              <div className="inline-block bg-navy/10 text-navy px-4 py-2 rounded-full text-sm font-medium mb-4">
+              <div className="inline-block bg-navy/10 dark:bg-navy/20 text-navy dark:text-gray-200 px-4 py-2 rounded-full text-sm font-medium mb-4">
                 Industries We Serve
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-navy mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-navy dark:text-gray-100 mb-6">
                 Data Solutions for <AnimatedGradientText text="Every Industry" />
               </h2>
-              <p className="text-gray-600">
+              <p className="text-gray-600 dark:text-gray-300">
                 We have experience working with clients across a wide range of industries, delivering tailored data
                 solutions to meet their specific needs.
               </p>
@@ -152,8 +152,8 @@ export default function CaseStudiesPage() {
               "Real Estate",
             ].map((industry, index) => (
               <RevealOnScroll key={industry} animation="fade-in-up" delay={index * 50}>
-                <div className="bg-white rounded-xl shadow-md p-6 text-center border border-gray-100 hover:border-orange/30 hover:shadow-lg transition-all">
-                  <h3 className="text-navy font-medium">{industry}</h3>
+                <div className="bg-white dark:bg-gray-700 rounded-xl shadow-md p-6 text-center border border-gray-100 dark:border-gray-600 hover:border-orange/30 dark:hover:border-orange/30 hover:shadow-lg transition-all">
+                  <h3 className="text-navy dark:text-gray-100 font-medium">{industry}</h3>
                 </div>
               </RevealOnScroll>
             ))}

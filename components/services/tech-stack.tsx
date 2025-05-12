@@ -67,7 +67,7 @@ const LogoPlaceholder = ({ name }: { name: string }) => {
   const initials = name.split(' ').map(word => word[0]).join('').toUpperCase();
   
   return (
-    <div className="w-16 h-16 bg-navy/10 rounded-lg flex items-center justify-center text-navy font-bold">
+    <div className="w-16 h-16 bg-navy/10 dark:bg-navy/20 rounded-lg flex items-center justify-center text-navy dark:text-gray-200 font-bold">
       {initials}
     </div>
   );
@@ -75,17 +75,17 @@ const LogoPlaceholder = ({ name }: { name: string }) => {
 
 export default function TechStack() {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="container mx-auto px-4">
         <RevealOnScroll>
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <div className="inline-block bg-navy/10 text-navy px-4 py-2 rounded-full text-sm font-medium mb-4">
+            <div className="inline-block bg-navy/10 dark:bg-navy/20 text-navy dark:text-gray-200 px-4 py-2 rounded-full text-sm font-medium mb-4">
               Our Technology Stack
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-navy mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-navy dark:text-gray-100 mb-6">
               Technologies We Work With from the Modern <AnimatedGradientText text="Data & Analytics" /> Stack
             </h2>
-            <p className="text-gray-600">
+            <p className="text-gray-600 dark:text-gray-300">
               We leverage cutting-edge technologies to deliver scalable, efficient, and future-proof data solutions.
             </p>
           </div>
@@ -93,9 +93,9 @@ export default function TechStack() {
 
         <div className="space-y-16">
           {techCategories.map((category, categoryIndex) => (
-            <div key={category.id} className="bg-white rounded-xl shadow-lg p-8 border border-gray-100">
+            <div key={category.id} className="bg-white dark:bg-gray-700 rounded-xl shadow-lg p-8 border border-gray-100 dark:border-gray-600">
               <RevealOnScroll delay={categoryIndex * 100}>
-                <h3 className="text-2xl font-bold text-navy mb-8 text-center">{category.title}</h3>
+                <h3 className="text-2xl font-bold text-navy dark:text-gray-100 mb-8 text-center">{category.title}</h3>
               </RevealOnScroll>
               
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
@@ -108,7 +108,7 @@ export default function TechStack() {
                     viewport={{ once: true }}
                     className="flex flex-col items-center"
                   >
-                    <div className="mb-3 w-20 h-20 flex items-center justify-center bg-white rounded-lg shadow-md p-3 hover:shadow-lg transition-shadow">
+                    <div className="mb-3 w-20 h-20 flex items-center justify-center bg-white dark:bg-gray-800 rounded-lg shadow-md p-3 hover:shadow-lg transition-shadow">
                       {tech.logo ? (
                         <div className="relative w-full h-full">
                           <Image
@@ -116,13 +116,14 @@ export default function TechStack() {
                             alt={tech.name}
                             fill
                             style={{ objectFit: "contain" }}
+                            className="dark:brightness-110 dark:contrast-125"
                           />
                         </div>
                       ) : (
                         <LogoPlaceholder name={tech.name} />
                       )}
                     </div>
-                    <span className="text-navy font-medium text-sm text-center">{tech.name}</span>
+                    <span className="text-navy dark:text-gray-200 font-medium text-sm text-center">{tech.name}</span>
                   </motion.div>
                 ))}
               </div>

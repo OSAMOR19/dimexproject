@@ -45,28 +45,28 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-50 dark:bg-gray-800">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <RevealOnScroll animation="fade-in-left">
               <div className="lg:col-span-1 space-y-6">
-                <Card className="border-none shadow-lg bg-white">
+                <Card className="border-none shadow-lg bg-white dark:bg-gray-700">
                   <CardHeader>
-                    <CardTitle className="text-xl text-navy">
+                    <CardTitle className="text-xl text-navy dark:text-gray-100">
                       Contact Information
                     </CardTitle>
-                    <CardDescription>
+                    <CardDescription className="dark:text-gray-300">
                       Reach out to us through any of these channels
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="space-y-6">
                     <div className="flex items-start">
-                      <div className="bg-navy/5 p-3 rounded-full mr-4">
+                      <div className="bg-navy/5 dark:bg-navy/20 p-3 rounded-full mr-4">
                         <MapPin className="h-5 w-5 text-orange" />
                       </div>
                       <div>
-                        <h3 className="text-navy font-medium">Our Office</h3>
-                        <p className="text-gray-600 text-sm">
+                        <h3 className="text-navy dark:text-gray-100 font-medium">Our Office</h3>
+                        <p className="text-gray-600 dark:text-gray-300 text-sm">
                           Grange Works,
                           <br />
                           High Street, Minster,
@@ -77,12 +77,12 @@ export default function ContactPage() {
                     </div>
 
                     <div className="flex items-start">
-                      <div className="bg-navy/5 p-3 rounded-full mr-4">
+                      <div className="bg-navy/5 dark:bg-navy/20 p-3 rounded-full mr-4">
                         <Phone className="h-5 w-5 text-orange" />
                       </div>
                       <div>
-                        <h3 className="text-navy font-medium">Phone</h3>
-                        <p className="text-gray-600 text-sm">
+                        <h3 className="text-navy dark:text-gray-100 font-medium">Phone</h3>
+                        <p className="text-gray-600 dark:text-gray-300 text-sm">
                           <a
                             href="tel:+11234567890"
                             className="hover:text-orange transition-colors"
@@ -94,12 +94,12 @@ export default function ContactPage() {
                     </div>
 
                     <div className="flex items-start">
-                      <div className="bg-navy/5 p-3 rounded-full mr-4">
+                      <div className="bg-navy/5 dark:bg-navy/20 p-3 rounded-full mr-4">
                         <Mail className="h-5 w-5 text-orange" />
                       </div>
                       <div>
-                        <h3 className="text-navy font-medium">Email</h3>
-                        <p className="text-gray-600 text-sm">
+                        <h3 className="text-navy dark:text-gray-100 font-medium">Email</h3>
+                        <p className="text-gray-600 dark:text-gray-300 text-sm">
                           <a
                             href="mailto:info@dimexoptionsltd.com "
                             className="hover:text-orange transition-colors"
@@ -111,14 +111,14 @@ export default function ContactPage() {
                     </div>
 
                     <div className="flex items-start">
-                      <div className="bg-navy/5 p-3 rounded-full mr-4">
+                      <div className="bg-navy/5 dark:bg-navy/20 p-3 rounded-full mr-4">
                         <Clock className="h-5 w-5 text-orange" />
                       </div>
                       <div>
-                        <h3 className="text-navy font-medium">
+                        <h3 className="text-navy dark:text-gray-100 font-medium">
                           Business Hours
                         </h3>
-                        <p className="text-gray-600 text-sm">
+                        <p className="text-gray-600 dark:text-gray-300 text-sm">
                           Monday - Friday: 9:00 AM - 6:00 PM
                           <br />
                           Saturday - Sunday: Closed
@@ -128,9 +128,9 @@ export default function ContactPage() {
                   </CardContent>
                 </Card>
 
-                <Card className="border-none shadow-lg bg-white">
+                <Card className="border-none shadow-lg bg-white dark:bg-gray-700">
                   <CardHeader>
-                    <CardTitle className="text-xl text-navy">
+                    <CardTitle className="text-xl text-navy dark:text-gray-100">
                       Connect With Us
                     </CardTitle>
                   </CardHeader>
@@ -138,10 +138,10 @@ export default function ContactPage() {
                     <div className="flex space-x-4">
                       <a
                         href="#"
-                        className="bg-navy/5 p-3 rounded-full hover:bg-orange/10 transition-colors"
+                        className="bg-navy/5 dark:bg-navy/20 p-3 rounded-full hover:bg-orange/10 transition-colors"
                       >
                         <svg
-                          className="h-5 w-5 text-navy"
+                          className="h-5 w-5 text-navy dark:text-gray-200"
                           fill="currentColor"
                           viewBox="0 0 24 24"
                           xmlns="http://www.w3.org/2000/svg"
@@ -151,10 +151,10 @@ export default function ContactPage() {
                       </a>
                       <a
                         href="#"
-                        className="bg-navy/5 p-3 rounded-full hover:bg-orange/10 transition-colors"
+                        className="bg-navy/5 dark:bg-navy/20 p-3 rounded-full hover:bg-orange/10 transition-colors"
                       >
                         <svg
-                          className="h-5 w-5 text-navy"
+                          className="h-5 w-5 text-navy dark:text-gray-200"
                           fill="currentColor"
                           viewBox="0 0 24 24"
                           xmlns="http://www.w3.org/2000/svg"
@@ -164,10 +164,10 @@ export default function ContactPage() {
                       </a>
                       <a
                         href="#"
-                        className="bg-navy/5 p-3 rounded-full hover:bg-orange/10 transition-colors"
+                        className="bg-navy/5 dark:bg-navy/20 p-3 rounded-full hover:bg-orange/10 transition-colors"
                       >
                         <svg
-                          className="h-5 w-5 text-navy"
+                          className="h-5 w-5 text-navy dark:text-gray-200"
                           fill="currentColor"
                           viewBox="0 0 24 24"
                           xmlns="http://www.w3.org/2000/svg"
@@ -177,10 +177,10 @@ export default function ContactPage() {
                       </a>
                       <a
                         href="#"
-                        className="bg-navy/5 p-3 rounded-full hover:bg-orange/10 transition-colors"
+                        className="bg-navy/5 dark:bg-navy/20 p-3 rounded-full hover:bg-orange/10 transition-colors"
                       >
                         <svg
-                          className="h-5 w-5 text-navy"
+                          className="h-5 w-5 text-navy dark:text-gray-200"
                           fill="currentColor"
                           viewBox="0 0 24 24"
                           xmlns="http://www.w3.org/2000/svg"
@@ -196,12 +196,12 @@ export default function ContactPage() {
 
             <RevealOnScroll animation="fade-in-right" delay={200}>
               <div className="lg:col-span-2">
-                <Card className="border-none shadow-lg bg-white">
+                <Card className="border-none shadow-lg bg-white dark:bg-gray-700">
                   <CardHeader>
-                    <CardTitle className="text-xl text-navy">
+                    <CardTitle className="text-xl text-navy dark:text-gray-100">
                       Send Us a Message
                     </CardTitle>
-                    <CardDescription>
+                    <CardDescription className="dark:text-gray-300">
                       Fill out the form below and we'll get back to you as soon
                       as possible
                     </CardDescription>
@@ -210,46 +210,46 @@ export default function ContactPage() {
                     <form className="space-y-6">
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="space-y-2">
-                          <label htmlFor="name" className="text-sm font-medium text-gray-700">
+                          <label htmlFor="name" className="text-sm font-medium text-gray-700 dark:text-gray-200">
                             Full Name
                           </label>
-                          <Input id="name" placeholder="John Doe" className="bg-white" />
+                          <Input id="name" placeholder="John Doe" className="bg-white dark:bg-gray-800 dark:text-white dark:border-gray-600" />
                         </div>
                         <div className="space-y-2">
-                          <label htmlFor="email" className="text-sm font-medium text-gray-700">
+                          <label htmlFor="email" className="text-sm font-medium text-gray-700 dark:text-gray-200">
                             Email Address
                           </label>
-                          <Input id="email" type="email" placeholder="john@example.com" className="bg-white" />
+                          <Input id="email" type="email" placeholder="john@example.com" className="bg-white dark:bg-gray-800 dark:text-white dark:border-gray-600" />
                         </div>
                       </div>
 
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="space-y-2">
-                          <label htmlFor="phone" className="text-sm font-medium text-gray-700">
+                          <label htmlFor="phone" className="text-sm font-medium text-gray-700 dark:text-gray-200">
                             Phone Number
                           </label>
-                          <Input id="phone" placeholder="+1 (123) 456-7890" className="bg-white" />
+                          <Input id="phone" placeholder="+1 (123) 456-7890" className="bg-white dark:bg-gray-800 dark:text-white dark:border-gray-600" />
                         </div>
                         <div className="space-y-2">
-                          <label htmlFor="company" className="text-sm font-medium text-gray-700">
+                          <label htmlFor="company" className="text-sm font-medium text-gray-700 dark:text-gray-200">
                             Company
                           </label>
-                          <Input id="company" placeholder="Your Company" className="bg-white" />
+                          <Input id="company" placeholder="Your Company" className="bg-white dark:bg-gray-800 dark:text-white dark:border-gray-600" />
                         </div>
                       </div>
 
                       <div className="space-y-2">
-                        <label htmlFor="subject" className="text-sm font-medium text-gray-700">
+                        <label htmlFor="subject" className="text-sm font-medium text-gray-700 dark:text-gray-200">
                           Subject
                         </label>
-                        <Input id="subject" placeholder="How can we help you?" className="bg-white" />
+                        <Input id="subject" placeholder="How can we help you?" className="bg-white dark:bg-gray-800 dark:text-white dark:border-gray-600" />
                       </div>
 
                       <div className="space-y-2">
-                        <label htmlFor="message" className="text-sm font-medium text-gray-700">
+                        <label htmlFor="message" className="text-sm font-medium text-gray-700 dark:text-gray-200">
                           Message
                         </label>
-                        <Textarea id="message" placeholder="Tell us about your project or inquiry..." rows={6} className="bg-white" />
+                        <Textarea id="message" placeholder="Tell us about your project or inquiry..." rows={6} className="bg-white dark:bg-gray-800 dark:text-white dark:border-gray-600" />
                       </div>
 
                       <Button className="w-full bg-orange hover:bg-orange/90 text-white">Send Message</Button>
@@ -262,14 +262,14 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <RevealOnScroll>
             <div className="max-w-3xl mx-auto text-center mb-16">
-              <div className="inline-block bg-navy/10 text-navy px-4 py-2 rounded-full text-sm font-medium mb-4">
+              <div className="inline-block bg-navy/10 dark:bg-navy/20 text-navy dark:text-gray-200 px-4 py-2 rounded-full text-sm font-medium mb-4">
                 Our Location
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-navy mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-navy dark:text-gray-100 mb-6">
                 Visit Our <AnimatedGradientText text="Office" />
               </h2>
             </div>

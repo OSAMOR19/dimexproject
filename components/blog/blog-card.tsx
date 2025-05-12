@@ -20,7 +20,7 @@ interface BlogCardProps {
 const BlogCard = ({ id, title, excerpt, category, author, date, readTime, image, delay = 0 }: BlogCardProps) => {
   return (
     <RevealOnScroll animation="fade-in-up" delay={delay}>
-      <Card className="blog-card overflow-hidden border-none shadow-lg hover:shadow-xl bg-white h-full">
+      <Card className="blog-card overflow-hidden border-none shadow-lg hover:shadow-xl bg-white dark:bg-gray-800 h-full">
         <div className="relative h-48 overflow-hidden">
           <Image
             src={image || "/placeholder.svg"}
@@ -33,20 +33,20 @@ const BlogCard = ({ id, title, excerpt, category, author, date, readTime, image,
         <CardHeader className="pb-2">
           <div className="flex justify-between items-center mb-2">
             <Badge className="bg-orange text-white">{category}</Badge>
-            <div className="flex items-center text-gray-500 text-xs">
+            <div className="flex items-center text-gray-500 dark:text-gray-400 text-xs">
               <Clock className="h-3 w-3 mr-1" />
               <span>{readTime}</span>
             </div>
           </div>
-          <CardTitle className="text-xl text-navy hover:text-orange transition-colors">
+          <CardTitle className="text-xl text-navy dark:text-gray-100 hover:text-orange dark:hover:text-orange transition-colors">
             <Link href={`/blog/${id}`}>{title}</Link>
           </CardTitle>
         </CardHeader>
 
         <CardContent>
-          <CardDescription className="text-gray-600 mb-4">{excerpt}</CardDescription>
+          <CardDescription className="text-gray-600 dark:text-gray-300 mb-4">{excerpt}</CardDescription>
 
-          <div className="flex items-center text-sm text-gray-500">
+          <div className="flex items-center text-sm text-gray-500 dark:text-gray-400">
             <div className="flex items-center mr-4">
               <User className="h-4 w-4 mr-1" />
               <span>{author}</span>
@@ -59,7 +59,7 @@ const BlogCard = ({ id, title, excerpt, category, author, date, readTime, image,
         </CardContent>
 
         <CardFooter>
-          <Link href={`/blog/${id}`} className="text-navy font-medium hover:text-orange transition-colors">
+          <Link href={`/blog/${id}`} className="text-navy dark:text-gray-200 font-medium hover:text-orange dark:hover:text-orange transition-colors">
             Read More →
           </Link>
         </CardFooter>

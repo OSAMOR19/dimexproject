@@ -57,14 +57,14 @@ const ClientLogos = () => {
   }, [])
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <RevealOnScroll>
           <div className="text-center mb-12">
-            <div className="inline-block bg-navy/10 text-navy px-4 py-2 rounded-full text-sm font-medium mb-4">
+            <div className="inline-block bg-navy/10 dark:bg-navy/20 text-navy dark:text-gray-200 px-4 py-2 rounded-full text-sm font-medium mb-4">
               Trusted By
             </div>
-            <h2 className="text-3xl font-bold text-navy">
+            <h2 className="text-3xl font-bold text-navy dark:text-gray-100">
               Companies That <AnimatedGradientText text="Trust Us" /> With Their Data
             </h2>
           </div>
@@ -72,14 +72,14 @@ const ClientLogos = () => {
 
         <div className="relative overflow-hidden">
           {/* Gradient Fade Effect */}
-          <div className="absolute left-0 top-0 bottom-0 w-16 z-10 bg-gradient-to-r from-white to-transparent"></div>
-          <div className="absolute right-0 top-0 bottom-0 w-16 z-10 bg-gradient-to-l from-white to-transparent"></div>
+          <div className="absolute left-0 top-0 bottom-0 w-16 z-10 bg-gradient-to-r from-white dark:from-gray-900 to-transparent"></div>
+          <div className="absolute right-0 top-0 bottom-0 w-16 z-10 bg-gradient-to-l from-white dark:from-gray-900 to-transparent"></div>
 
           <div ref={scrollRef} className="flex items-center space-x-12 overflow-x-hidden py-8">
             {duplicateClients.map((client, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100"
+                className="flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100 dark:brightness-90 dark:hover:brightness-110"
               >
                 <Image
                   src={client.logo || "/placeholder.svg"}

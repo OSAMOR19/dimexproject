@@ -104,12 +104,12 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <RevealOnScroll animation="fade-in-left">
               <div className="relative">
-                <div className="absolute -z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] rounded-full bg-gradient-to-r from-navy/10 to-orange/10 blur-3xl opacity-30"></div>
+                <div className="absolute -z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] rounded-full bg-gradient-to-r from-navy/10 to-orange/10 dark:from-navy/20 dark:to-orange/20 blur-3xl opacity-30"></div>
 
                 <div className="relative z-10 rounded-2xl overflow-hidden shadow-xl">
                   <Image
@@ -125,23 +125,23 @@ export default function AboutPage() {
 
             <RevealOnScroll animation="fade-in-right" delay={200}>
               <div className="space-y-6">
-                <div className="inline-block bg-orange/10 text-orange px-4 py-2 rounded-full text-sm font-medium">
+                <div className="inline-block bg-orange/10 dark:bg-orange/20 text-orange px-4 py-2 rounded-full text-sm font-medium">
                   Our Story
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-navy">
+                <h2 className="text-3xl md:text-4xl font-bold text-navy dark:text-gray-100">
                   Transforming Data into <AnimatedGradientText text="Actionable Insights" />
                 </h2>
-                <p className="text-gray-600">
+                <p className="text-gray-600 dark:text-gray-300">
                   Founded in 2013, Dimex has grown from a small data consultancy to a leading analytics firm serving
                   clients worldwide. Our journey began with a simple mission: to help businesses harness the power of
                   their data to drive growth and innovation.
                 </p>
-                <p className="text-gray-600">
+                <p className="text-gray-600 dark:text-gray-300">
                   Today, we're proud to have worked with hundreds of organizations across various industries, from
                   startups to Fortune 500 companies. Our team of data scientists, analysts, and engineers brings
                   together diverse expertise to solve complex business challenges through data-driven approaches.
                 </p>
-                <p className="text-gray-600">
+                <p className="text-gray-600 dark:text-gray-300">
                   What sets us apart is our commitment to not just delivering technical solutions, but to truly
                   understanding our clients' business objectives and tailoring our approach to achieve measurable
                   results.
@@ -152,17 +152,17 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-50 dark:bg-gray-800">
         <div className="container mx-auto px-4">
           <RevealOnScroll>
             <div className="max-w-3xl mx-auto text-center mb-16">
-              <div className="inline-block bg-navy/10 text-navy px-4 py-2 rounded-full text-sm font-medium mb-4">
+              <div className="inline-block bg-navy/10 dark:bg-navy/20 text-navy dark:text-gray-200 px-4 py-2 rounded-full text-sm font-medium mb-4">
                 Our Values
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-navy mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-navy dark:text-gray-100 mb-6">
                 Principles That <AnimatedGradientText text="Guide Us" />
               </h2>
-              <p className="text-gray-600">
+              <p className="text-gray-600 dark:text-gray-300">
                 Our core values shape everything we do, from how we work with clients to how we develop our solutions.
               </p>
             </div>
@@ -171,10 +171,10 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
               <RevealOnScroll key={value.title} animation="fade-in-up" delay={index * 150}>
-                <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-100">
-                  <div className="bg-navy/5 p-4 rounded-full inline-block mb-6">{value.icon}</div>
-                  <h3 className="text-xl font-bold text-navy mb-4">{value.title}</h3>
-                  <p className="text-gray-600">{value.description}</p>
+                <div className="bg-white dark:bg-gray-700 rounded-xl shadow-lg p-8 border border-gray-100 dark:border-gray-600">
+                  <div className="bg-navy/5 dark:bg-navy/20 p-4 rounded-full inline-block mb-6">{value.icon}</div>
+                  <h3 className="text-xl font-bold text-navy dark:text-gray-100 mb-4">{value.title}</h3>
+                  <p className="text-gray-600 dark:text-gray-300">{value.description}</p>
                 </div>
               </RevealOnScroll>
             ))}
@@ -224,17 +224,17 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <RevealOnScroll>
             <div className="max-w-3xl mx-auto text-center mb-16">
-              <div className="inline-block bg-navy/10 text-navy px-4 py-2 rounded-full text-sm font-medium mb-4">
+              <div className="inline-block bg-navy/10 dark:bg-navy/20 text-navy dark:text-gray-200 px-4 py-2 rounded-full text-sm font-medium mb-4">
                 Our Team
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-navy mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-navy dark:text-gray-100 mb-6">
                 Meet the <AnimatedGradientText text="Experts" />
               </h2>
-              <p className="text-gray-600">
+              <p className="text-gray-600 dark:text-gray-300">
                 Our diverse team brings together expertise in data science, analytics, engineering, and business
                 strategy.
               </p>

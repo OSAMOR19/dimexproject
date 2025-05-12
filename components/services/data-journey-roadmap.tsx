@@ -40,17 +40,17 @@ const roadmapSteps = [
 
 export default function DataJourneyRoadmap() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <RevealOnScroll>
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <div className="inline-block bg-navy/10 text-navy px-4 py-2 rounded-full text-sm font-medium mb-4">
+            <div className="inline-block bg-navy/10 dark:bg-navy/20 text-navy dark:text-gray-200 px-4 py-2 rounded-full text-sm font-medium mb-4">
               Our Methodology
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-navy mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-navy dark:text-gray-100 mb-6">
               Navigating your <AnimatedGradientText text="Data & Analytics" /> journey
             </h2>
-            <p className="text-gray-600">
+            <p className="text-gray-600 dark:text-gray-400">
               At Dimex, we approach data analytics services with a structured, client-centric
               process that focuses on your business objectives and operational requirements.
               We don't just implement data solutions; we create tailored data strategies that
@@ -82,12 +82,12 @@ export default function DataJourneyRoadmap() {
 
               {/* Content card */}
               <div 
-                className={`flex-grow md:w-5/12 bg-white rounded-xl shadow-lg p-6 border border-gray-100 md:mx-8 ${
+                className={`flex-grow md:w-5/12 bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-100 dark:border-gray-700 md:mx-8 ${
                   index % 2 === 0 ? "md:ml-8 md:mr-auto" : "md:mr-8 md:ml-auto"
                 }`}
               >
-                <h3 className="text-xl font-bold text-navy mb-2">{step.title}</h3>
-                <p className="text-gray-600">{step.description}</p>
+                <h3 className="text-xl font-bold text-navy dark:text-gray-200 mb-2">{step.title}</h3>
+                <p className="text-gray-600 dark:text-gray-400">{step.description}</p>
               </div>
 
               {/* Spacer for alternating layout */}

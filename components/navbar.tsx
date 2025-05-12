@@ -7,6 +7,7 @@ import Logo from "@/components/images/dimexbgremoved.png"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -41,8 +42,10 @@ const Navbar = () => {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        isScrolled ? "bg-white/95 backdrop-blur-sm shadow-md py-2" : "bg-transparent py-4",
+        "fixed top-0  left-0 right-0 z-50 transition-all duration-300",
+        isScrolled 
+          ? "bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm shadow-md py-2" 
+          : "bg-transparent dark:bg-transparent py-4",
       )}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
@@ -60,7 +63,9 @@ const Navbar = () => {
               href={link.href}
               className={cn(
                 "px-4 py-2 text-sm font-medium transition-colors relative group",
-                isScrolled ? "text-navy hover:text-orange" : "text-navy hover:text-orange",
+                isScrolled 
+                  ? "text-navy dark:text-gray-200 hover:text-orange dark:hover:text-orange" 
+                  : "text-navy dark:text-gray-200 hover:text-orange dark:hover:text-orange",
               )}
             >
               {link.name}
@@ -68,17 +73,27 @@ const Navbar = () => {
             </Link>
           ))}
           <Button className="ml-4 bg-orange hover:bg-orange/90 text-white">Let&apos;s Talk Data</Button>
+          <div className="ml-4">
+            <ThemeToggle />
+          </div>
         </nav>
 
-        {/* Mobile Menu Button */}
-        <button className="md:hidden relative z-10 text-navy" onClick={toggleMenu} aria-label="Toggle Menu">
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="md:hidden flex items-center gap-2">
+          <ThemeToggle />
+          {/* Mobile Menu Button */}
+          <button 
+            className="relative z-10 text-navy dark:text-gray-200" 
+            onClick={toggleMenu} 
+            aria-label="Toggle Menu"
+          >
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
 
         {/* Mobile Navigation */}
         <div
           className={cn(
-            "fixed inset-0 bg-white z-0 transform transition-transform duration-300 ease-in-out md:hidden",
+            "fixed inset-0 bg-white dark:bg-gray-900 z-0 transform transition-transform duration-300 ease-in-out md:hidden",
             isOpen ? "translate-x-0" : "translate-x-full",
           )}
         >
@@ -87,7 +102,7 @@ const Navbar = () => {
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-navy hover:text-orange text-xl font-medium"
+                className="text-navy dark:text-gray-200 hover:text-orange dark:hover:text-orange text-xl font-medium"
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}
