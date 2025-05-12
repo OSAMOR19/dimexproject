@@ -73,7 +73,7 @@ export default function ContactPage() {
                         <h3 className="text-navy font-medium">Phone</h3>
                         <p className="text-gray-600 text-sm">
                           <a href="tel:+11234567890" className="hover:text-orange transition-colors">
-                            +1 (123) 456-7890
+                            +447467186400
                           </a>
                         </p>
                       </div>
@@ -86,8 +86,10 @@ export default function ContactPage() {
                       <div>
                         <h3 className="text-navy font-medium">Email</h3>
                         <p className="text-gray-600 text-sm">
-                          <a href="mailto:info@dimex.com" className="hover:text-orange transition-colors">
-                            info@dimex.com
+                          <a href="mailto:info@dimexoptionsltd.com 
+" className="hover:text-orange transition-colors">
+                            info@dimexoptionsltd.com 
+
                           </a>
                         </p>
                       </div>
@@ -241,10 +243,17 @@ export default function ContactPage() {
 
           <RevealOnScroll delay={200}>
             <div className="rounded-xl overflow-hidden shadow-lg h-[400px] w-full">
-              {/* Replace with actual map embed */}
-              <div className="w-full h-full bg-gray-200 flex items-center justify-center">
-                <p className="text-gray-500">Map Embed Would Go Here</p>
-              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2494.5762568321247!2d1.3185278!3d51.3306111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d953e2a4a4a651%3A0x7c3b3979e16d5def!2sGrange%20Works%2C%20High%20St%2C%20Minster%2C%20Ramsgate%20CT12%204BT!5e0!3m2!1sen!2suk!4v1652345678901!5m2!1sen!2suk"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Dimex Data Analytics Office Location"
+                className="w-full h-full"
+              ></iframe>
             </div>
           </RevealOnScroll>
         </div>

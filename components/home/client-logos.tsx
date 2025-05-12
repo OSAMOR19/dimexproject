@@ -4,16 +4,24 @@ import { useRef, useEffect } from "react"
 import Image from "next/image"
 import RevealOnScroll from "@/components/animations/reveal-on-scroll"
 import AnimatedGradientText from "@/components/animations/animated-gradient-text"
+import company1 from "@/components/images/boschlogo.png"
+import company2 from "@/components/images/avllogo.png"
+import company3 from "@/components/images/cleverbridge.png"
+import company4 from "@/components/images/gogologo.png"
+import company5 from "@/components/images/lebara.png"
+import company6 from "@/components/images/ringierlogo.png"
+import company7 from "@/components/images/redflexlogo.png"
+import company8 from "@/components/images/pretty.png"
 
 const clients = [
-  { name: "Company 1", logo: "/placeholder.svg?height=80&width=160" },
-  { name: "Company 2", logo: "/placeholder.svg?height=80&width=160" },
-  { name: "Company 3", logo: "/placeholder.svg?height=80&width=160" },
-  { name: "Company 4", logo: "/placeholder.svg?height=80&width=160" },
-  { name: "Company 5", logo: "/placeholder.svg?height=80&width=160" },
-  { name: "Company 6", logo: "/placeholder.svg?height=80&width=160" },
-  { name: "Company 7", logo: "/placeholder.svg?height=80&width=160" },
-  { name: "Company 8", logo: "/placeholder.svg?height=80&width=160" },
+  { name: "Company 1", logo: company1 },
+  { name: "Company 2", logo: company2 },
+  { name: "Company 3", logo: company3 },
+  { name: "Company 4", logo: company4 },
+  { name: "Company 5", logo: company5 },
+  { name: "Company 6", logo: company6 },
+  { name: "Company 7", logo: company7 },
+  { name: "Company 8", logo: company8 },
 ]
 
 const ClientLogos = () => {

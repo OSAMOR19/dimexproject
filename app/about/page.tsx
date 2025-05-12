@@ -6,6 +6,7 @@ import RevealOnScroll from "@/components/animations/reveal-on-scroll"
 import AnimatedGradientText from "@/components/animations/animated-gradient-text"
 import AnimatedCounter from "@/components/animations/animated-counter"
 import DataParticles from "@/components/animations/data-particles"
+import founded from "@/components/images/founded.jpg"
 
 export const metadata: Metadata = {
   title: "About Us | Dimex Data Analytics",

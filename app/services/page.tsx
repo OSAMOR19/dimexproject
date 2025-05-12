@@ -4,6 +4,10 @@ import ServiceCard from "@/components/services/service-card"
 import RevealOnScroll from "@/components/animations/reveal-on-scroll"
 import AnimatedGradientText from "@/components/animations/animated-gradient-text"
 import DataParticles from "@/components/animations/data-particles"
+import DataJourneyRoadmap from "@/components/services/data-journey-roadmap"
+import CoreServices from "@/components/services/core-services"
+import TechStack from "@/components/services/tech-stack"
+import FaqSection from "@/components/services/faq-section"
 
 export const metadata: Metadata = {
   title: "Services | Dimex Data Analytics",
@@ -109,6 +113,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Featured Services Section */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -127,6 +132,16 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Data Journey Roadmap Section */}
+      <DataJourneyRoadmap />
+
+      {/* Core Services Section */}
+      <CoreServices />
+
+      {/* Technology Stack Section */}
+      <TechStack />
+
+      {/* Our Approach Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <RevealOnScroll>
@@ -194,6 +209,9 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FaqSection />
     </>
   )
 }

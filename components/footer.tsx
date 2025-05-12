@@ -71,18 +71,20 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin size={20} className="mr-2 text-orange flex-shrink-0 mt-1" />
-                <span className="text-gray-300">123 Analytics Way, Data City, DC 10101</span>
+                <span className="text-gray-300">Grange Works,  High Street, Minster, Ramsgate, Kent, CT12 4BT,</span>
               </li>
               <li className="flex items-center">
                 <Phone size={20} className="mr-2 text-orange flex-shrink-0" />
                 <a href="tel:+11234567890" className="text-gray-300 hover:text-orange transition-colors">
-                  +1 (123) 456-7890
+                +447467186400
                 </a>
               </li>
               <li className="flex items-center">
                 <Mail size={20} className="mr-2 text-orange flex-shrink-0" />
-                <a href="mailto:info@dimex.com" className="text-gray-300 hover:text-orange transition-colors">
-                  info@dimex.com
+                <a href="mailto:info@dimexoptionsltd.com 
+" className="text-gray-300 hover:text-orange transition-colors">
+                  info@dimexoptionsltd.com 
+
                 </a>
               </li>
             </ul>

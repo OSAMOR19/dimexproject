@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
+import Logo from "@/components/images/dimexbgremoved.png"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
@@ -47,7 +48,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link href="/" className="relative z-10">
           <div className="flex items-center">
-            <Image src="/images/logo.png" alt="Dimex Logo" width={120} height={50} className="h-12 w-auto" />
+            <Image src={Logo} alt="Dimex Logo" width={120} height={50} className="h-12 w-auto" />
           </div>
         </Link>
 

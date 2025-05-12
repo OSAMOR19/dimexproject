@@ -5,6 +5,7 @@ import { ArrowRight, CheckCircle } from "lucide-react"
 import RevealOnScroll from "@/components/animations/reveal-on-scroll"
 import AnimatedGradientText from "@/components/animations/animated-gradient-text"
 import AnimatedCounter from "@/components/animations/animated-counter"
+import business from "@/components/images/businessdimex.jpg"
 
 const benefits = [
   "Data-driven decision making",
@@ -26,7 +27,7 @@ const AboutSummary = () => {
 
               <div className="relative z-10 rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/placeholder.svg?height=600&width=800"
+                  src={business}
                   alt="About Dimex"
                   width={800}
                   height={600}
@@ -59,7 +60,7 @@ const AboutSummary = () => {
                 About Dimex
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-navy">
-                We Help Businesses <AnimatedGradientText text="Unlock the Power" /> of Their Data
+                We Helped Businesses <AnimatedGradientText text="Unlock the Power" /> of Their Data
               </h2>
               <p className="text-gray-600">
                 Dimex is a leading data analytics consulting firm specializing in transforming complex data into

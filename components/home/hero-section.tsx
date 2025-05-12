@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import hero from "@/components/images/personhero.jpg"
 import { ArrowRight, BarChart2, Database, LineChart } from "lucide-react"
 import DataParticles from "@/components/animations/data-particles"
 import RevealOnScroll from "@/components/animations/reveal-on-scroll"
@@ -46,21 +47,21 @@ const HeroSection = () => {
           <RevealOnScroll animation="fade-in-left">
             <div className="space-y-6">
               <div className="inline-block bg-navy/10 text-navy px-4 py-2 rounded-full text-sm font-medium">
-                Data Analytics Consulting
+               Data & Analytics services
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-navy leading-tight">
                 {typedText}
                 <span className="animate-pulse">|</span>
               </h1>
               <p className="text-lg text-gray-700 max-w-lg">
-                We help businesses harness the power of data to drive growth, optimize operations, and make informed
+                We helped businesses harness the power of data to drive growth, optimize operations, and make informed
                 decisions.
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
                 <Button size="lg" className="bg-orange hover:bg-orange/90 text-white">
                   Let&apos;s Talk Data <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
-                <Button size="lg" variant="outline" className="border-navy text-navy hover:bg-navy/5">
+                <Button size="lg" variant="outline" className="border-navy text-white ">
                   Our Services
                 </Button>
               </div>
@@ -105,7 +106,7 @@ const HeroSection = () => {
                 <div className="p-1">
                   <div className="rounded-xl overflow-hidden">
                     <Image
-                      src="/placeholder.svg?height=600&width=800"
+                      src={hero}
                       alt="Data Analytics Dashboard"
                       width={800}
                       height={600}
