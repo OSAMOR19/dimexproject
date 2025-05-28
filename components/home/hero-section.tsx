@@ -77,7 +77,7 @@ const HeroSection = () => {
               <div className="inline-block bg-white/20 text-white px-3 py-2 rounded-full text-sm font-medium">
                 
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-4xl font-bold text-white leading-tight">
                 {typedText}
                 <span className="animate-pulse">|</span>
               </h1>
