@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { BarChart2, Database, LineChart, PieChart, Layers } from "lucide-react"
+import { BarChart2, Database, LineChart, PieChart, Layers, Code, Globe, Server } from "lucide-react"
 import ServiceCard from "@/components/services/service-card"
 import RevealOnScroll from "@/components/animations/reveal-on-scroll"
 import AnimatedGradientText from "@/components/animations/animated-gradient-text"
@@ -44,6 +44,48 @@ const services = [
     delay: 150,
   },
   {
+    id: "custom-data-solutions",
+    title: "Custom Data Software",
+    description: "Bespoke software development tailored to your specific data analytics needs.",
+    icon: <Code className="h-10 w-10 text-orange" />,
+    features: [
+      "Custom analytics dashboards",
+      "Data pipeline automation",
+      "API development for data integration",
+      "Scalable data processing applications",
+      "Real-time analytics engines",
+    ],
+    delay: 225,
+  },
+  {
+    id: "web-development",
+    title: "Web Development",
+    description: "Data-driven web applications that deliver powerful insights through intuitive interfaces.",
+    icon: <Globe className="h-10 w-10 text-orange" />,
+    features: [
+      "Interactive data visualization portals",
+      "Customer-facing analytics dashboards",
+      "Responsive web applications",
+      "Progressive web apps (PWAs)",
+      "Performance-optimized data interfaces",
+    ],
+    delay: 275,
+  },
+  {
+    id: "full-stack-development",
+    title: "Full Stack Development",
+    description: "End-to-end solutions that seamlessly connect your data backend with powerful frontends.",
+    icon: <Server className="h-10 w-10 text-orange" />,
+    features: [
+      "Data-centric application architecture",
+      "API development and integration",
+      "Database design and optimization",
+      "Scalable backend systems",
+      "Modern frontend frameworks implementation",
+    ],
+    delay: 325,
+  },
+  {
     id: "bi-analytics",
     title: "BI & Analytics",
     description: "Transform raw data into actionable insights with powerful visualization tools.",
@@ -55,7 +97,7 @@ const services = [
       "Custom report creation",
       "Real-time analytics implementation",
     ],
-    delay: 300,
+    delay: 375,
   },
   {
     id: "platform-modernization",

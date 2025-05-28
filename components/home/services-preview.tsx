@@ -83,7 +83,7 @@ const ServicesPreview = () => {
         <RevealOnScroll delay={800}>
           <div className="text-center mt-12">
             <Link href="/services">
-              <Button variant="outline" className="border-navy dark:border-white text-white hover:bg-navy dark:hover:bg-white dark:hover:text-navy hover:text-white transform transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95 relative overflow-hidden before:absolute before:inset-0 before:bg-navy dark:before:bg-white before:transform before:scale-x-0 before:transition-transform before:duration-300 hover:before:scale-x-100 before:origin-left">
+              <Button variant="outline" className="border-navy dark:border-white text-navy dark:text-white hover:bg-navy hover:text-white dark:hover:bg-white dark:hover:text-navy transform transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95 relative overflow-hidden before:absolute before:inset-0 before:bg-navy dark:before:bg-white before:transform before:scale-x-0 before:transition-transform before:duration-300 hover:before:scale-x-100 before:origin-left">
                 View All Services <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>

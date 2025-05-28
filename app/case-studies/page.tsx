@@ -3,6 +3,12 @@ import CaseStudyCard from "@/components/case-studies/case-study-card"
 import RevealOnScroll from "@/components/animations/reveal-on-scroll"
 import AnimatedGradientText from "@/components/animations/animated-gradient-text"
 import DataParticles from "@/components/animations/data-particles"
+import retail from "@/components/images/retailpic.jpeg"
+import healthcare from "@/components/images/healthcare.jpeg"
+import supplychain from "@/components/images/supplychain.jpeg"
+import manufacturing from "@/components/images/manufacturing.jpeg"
+import fraud from "@/components/images/frauddetect.jpeg"
+import ecommerce from "@/components/images/ecommerce.jpeg"
 
 export const metadata: Metadata = {
   title: "Case Studies | Dimex Data Analytics",
@@ -18,7 +24,7 @@ const caseStudies = [
     summary:
       "Implemented a comprehensive analytics solution to optimize inventory management and improve customer experience.",
     result: "30% reduction in stockouts, 25% increase in customer satisfaction, and $5M annual cost savings.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: retail,
     delay: 0,
   },
   {
@@ -28,7 +34,7 @@ const caseStudies = [
     industry: "Healthcare",
     summary: "Developed predictive models to forecast patient admissions and optimize resource allocation.",
     result: "15% improvement in resource utilization, 20% reduction in wait times, and enhanced patient care quality.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: healthcare,
     delay: 150,
   },
   {
@@ -38,7 +44,7 @@ const caseStudies = [
     industry: "Finance",
     summary: "Implemented an AI-powered fraud detection system to identify suspicious transactions in real-time.",
     result: "60% increase in fraud detection rate, 40% reduction in false positives, saving $12M annually.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: fraud,
     delay: 300,
   },
   {
@@ -48,7 +54,7 @@ const caseStudies = [
     industry: "Manufacturing",
     summary: "Deployed IoT sensors and analytics platform to monitor and optimize production processes.",
     result: "22% increase in production efficiency, 18% reduction in defect rates, and $8M annual savings.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: manufacturing,
     delay: 450,
   },
   {
@@ -58,7 +64,7 @@ const caseStudies = [
     industry: "E-commerce",
     summary: "Built a machine learning-based recommendation engine to personalize customer shopping experiences.",
     result: "35% increase in conversion rates, 28% higher average order value, and improved customer retention.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: ecommerce,
     delay: 600,
   },
   {
@@ -68,7 +74,7 @@ const caseStudies = [
     industry: "Logistics",
     summary: "Developed a real-time analytics platform to optimize routing and delivery operations.",
     result: "15% reduction in fuel costs, 20% improvement in on-time deliveries, and enhanced customer satisfaction.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: supplychain,
     delay: 750,
   },
 ]

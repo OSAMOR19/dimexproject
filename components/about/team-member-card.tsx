@@ -7,7 +7,7 @@ interface TeamMemberCardProps {
   name: string
   role: string
   bio: string
-  image: string
+  image: any
   linkedin?: string
   twitter?: string
   email?: string

@@ -7,6 +7,8 @@ import AnimatedGradientText from "@/components/animations/animated-gradient-text
 import AnimatedCounter from "@/components/animations/animated-counter"
 import DataParticles from "@/components/animations/data-particles"
 import founded from "@/components/images/founded.jpg"
+import datapic from "@/components/images/datapic3.jpeg"
+import dimexceo from "@/components/images/dimexceo.jpg"
 
 export const metadata: Metadata = {
   title: "About Us | Dimex Data Analytics",
@@ -38,10 +40,10 @@ const values = [
 
 const teamMembers = [
   {
-    name: "Alex Johnson",
+    name: "Olarenwaju Oladeinde",
     role: "CEO & Founder",
-    bio: "With over 15 years of experience in data analytics, Alex founded Dimex with a vision to help businesses leverage data for growth.",
-    image: "/placeholder.svg?height=400&width=300",
+    bio: "With over 15 years of experience in data analytics, Ola founded Dimex with a vision to help businesses leverage data for growth.",
+    image: dimexceo,
     linkedin: "#",
     twitter: "#",
     email: "alex@dimex.com",
@@ -113,7 +115,7 @@ export default function AboutPage() {
 
                 <div className="relative z-10 rounded-2xl overflow-hidden shadow-xl">
                   <Image
-                    src="/placeholder.svg?height=600&width=800"
+                    src={datapic}
                     alt="About Dimex"
                     width={800}
                     height={600}

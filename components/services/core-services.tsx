@@ -12,7 +12,10 @@ import {
   PieChart, 
   Server, 
   Cpu, 
-  FileText 
+  FileText,
+  Code,
+  Globe,
+  Laptop
 } from "lucide-react";
 
 const coreServices = [
@@ -45,6 +48,24 @@ const coreServices = [
     title: "AI & Machine Learning",
     description: "Implement advanced algorithms to uncover patterns, make predictions, and automate decision-making.",
     icon: <PieChart className="h-10 w-10 text-orange" />,
+  },
+  {
+    id: "data-software",
+    title: "Data Analytics Software",
+    description: "Custom software solutions designed specifically for data processing, analysis, and visualization needs.",
+    icon: <Code className="h-10 w-10 text-orange" />,
+  },
+  {
+    id: "web-development",
+    title: "Web Development",
+    description: "Data-driven web applications with interactive dashboards and visualizations for better decision making.",
+    icon: <Globe className="h-10 w-10 text-orange" />,
+  },
+  {
+    id: "fullstack-development",
+    title: "Full Stack Development",
+    description: "End-to-end solutions connecting robust data backends with intuitive frontends for seamless data experiences.",
+    icon: <Laptop className="h-10 w-10 text-orange" />,
   },
   {
     id: "data-integration",

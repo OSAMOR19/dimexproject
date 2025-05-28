@@ -12,8 +12,20 @@ import snowflake from "@/components/images/snowflake.png"
 import databricks from "@/components/images/databricks.png"
 import tableau from "@/components/images/tableau.png"
 import powerbi from "@/components/images/powerbi.jpg"
-import looker from "@/components/images/looker.png"
+import airflow from "@/components/images/airflow.png"
 import qlik from "@/components/images/qliklogo.jpg"
+import kubernetes from "@/components/images/kubernetes.png"
+import docker from "@/components/images/docker.webp"
+import terraform from "@/components/images/terraform.png"
+import Kafka from "@/components/images/kafka.png"
+import spark from "@/components/images/spark.png"
+import python from "@/components/images/python.webp"
+import scala from "@/components/images/scala.png"
+import dbt from "@/components/images/dbt.png"
+import fivetran from "@/components/images/fivetran.webp"
+import d3js from "@/components/images/d3.jpeg"
+import looker from "@/components/images/looker.png"
+
 
 const techCategories = [
   {
@@ -31,22 +43,22 @@ const techCategories = [
     id: "cloud-platforms",
     title: "Modern Cloud Platforms",
     technologies: [
-      { name: "Kubernetes", logo: "/images/tech/kubernetes.svg" },
-      { name: "Docker", logo: "/images/tech/docker.svg" },
-      { name: "Terraform", logo: "/images/tech/terraform.svg" },
-      { name: "Airflow", logo: "/images/tech/airflow.svg" },
-      { name: "Kafka", logo: "/images/tech/kafka.svg" },
+      { name: "Kubernetes", logo: kubernetes},
+      { name: "Docker", logo: docker },
+      { name: "Terraform", logo: terraform },
+      { name: "Airflow", logo: airflow },
+      { name: "Kafka", logo: Kafka },
     ],
   },
   {
     id: "data-engineering",
     title: "Data Engineering",
     technologies: [
-      { name: "Spark", logo: "/images/tech/spark.svg" },
-      { name: "Python", logo: "/images/tech/python.svg" },
-      { name: "Scala", logo: "/images/tech/scala.svg" },
-      { name: "dbt", logo: "/images/tech/dbt.svg" },
-      { name: "Fivetran", logo: "/images/tech/fivetran.svg" },
+      { name: "Spark", logo: spark },
+      { name: "Python", logo: python },
+      { name: "Scala", logo: scala },
+      { name: "dbt", logo: dbt },
+      { name: "Fivetran", logo: fivetran },
     ],
   },
   {
@@ -55,9 +67,9 @@ const techCategories = [
     technologies: [
       { name: "Tableau", logo: tableau },
       { name: "Power BI", logo: powerbi },
-      { name: "Looker", logo: "/images/tech/looker.svg" },
+      { name: "Looker", logo: looker },
       { name: "Qlik", logo: qlik },
-      { name: "D3.js", logo: "/images/tech/d3.svg" },
+      { name: "D3.js", logo: d3js },
     ],
   },
 ];

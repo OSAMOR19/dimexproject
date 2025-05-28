@@ -13,7 +13,7 @@ interface CaseStudyCardProps {
   industry: string
   summary: string
   result: string
-  image: string
+  image: any
   delay?: number
 }
 

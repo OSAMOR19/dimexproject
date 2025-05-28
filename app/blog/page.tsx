@@ -20,7 +20,7 @@ const blogPosts = [
     excerpt:
       "Learn how to develop a comprehensive data strategy that aligns with your business objectives and drives growth.",
     category: "Data Strategy",
-    author: "Alex Johnson",
+    author: "Olarenwaju Oladeinde",
     date: "May 15, 2023",
     readTime: "8 min read",
     image: "/placeholder.svg?height=400&width=600",
@@ -66,7 +66,7 @@ const blogPosts = [
     title: "Implementing Real-Time Analytics Pipelines",
     excerpt: "Learn how to build and deploy real-time analytics pipelines to gain immediate insights from your data.",
     category: "Analytics",
-    author: "Alex Johnson",
+    author: "Olarenwaju Oladeinde",
     date: "August 5, 2023",
     readTime: "9 min read",
     image: "/placeholder.svg?height=400&width=600",
